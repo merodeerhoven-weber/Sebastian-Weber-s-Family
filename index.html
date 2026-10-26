@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#250910">
+<meta name="description" content="The House of Weber — a fictional family archive of law, finance, and legacy.">
+<title>The House of Weber — Family Archive</title>
+<style>
+:root{--bg:#160b0f;--deep:#250910;--panel:#1d0b11;--wine:#421522;--gold:#c5a265;--gold2:#ead7b4;--ivory:#f0e7da;--muted:#b9a99a;--line:rgba(197,162,101,.38);--serif:Georgia,"Times New Roman",serif;--sans:Arial,Helvetica,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:var(--bg);color:var(--ivory);font-family:var(--sans);letter-spacing:.015em}a{color:inherit;text-decoration:none}button,input{font:inherit}.wrap{width:min(1320px,100%);margin:auto}.topbar{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:14px clamp(20px,5vw,72px);background:rgba(25,8,14,.95);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:13px;color:var(--gold2);font-size:10px;letter-spacing:.2em;text-transform:uppercase}.seal{width:34px;height:34px;border:1px solid var(--gold);display:grid;place-items:center;transform:rotate(45deg);color:var(--gold2);font-family:var(--serif);font-size:16px;flex-shrink:0}.seal span{transform:rotate(-45deg)}nav{display:flex;gap:25px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}nav a:hover,nav a:focus-visible{color:white}.menu-toggle{display:none;background:none;color:var(--gold2);border:1px solid var(--line);padding:9px 12px}.hero{padding:clamp(50px,8vw,104px) clamp(20px,5vw,72px) 58px;background:radial-gradient(ellipse at 82% 20%,rgba(112,37,52,.4),transparent 44%),linear-gradient(125deg,#2a0b14,#17090d 72%)}.hero-grid{display:grid;grid-template-columns:1.05fr .8fr;gap:7%;align-items:center}.eyebrow{font-size:10px;letter-spacing:.27em;text-transform:uppercase;color:var(--gold)}h1,h2,h3,.serif{font-family:var(--serif);font-weight:400}h1{font-size:clamp(54px,8.4vw,112px);line-height:.84;letter-spacing:-.055em;margin:22px 0;color:var(--gold2);text-transform:uppercase}h1 span{display:block}.hero-sub{font-family:var(--serif);font-size:clamp(17px,2vw,23px);font-style:italic;margin:26px 0 16px}.hero-copy{max-width:460px;color:#c9b9b0;font-size:13px;line-height:1.95}.cta{display:inline-flex;align-items:center;gap:18px;margin-top:22px;padding:14px 18px;border:1px solid var(--gold);color:var(--gold2);font-size:10px;letter-spacing:.18em;text-transform:uppercase;transition:.2s}.cta:hover{background:var(--gold);color:#1a0b0f}.hero-photo{height:440px;position:relative;border:1px solid var(--line);padding:9px}.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 28%;filter:sepia(.16) saturate(.72);display:block}.photo-label{position:absolute;bottom:9px;left:9px;right:9px;padding:45px 20px 18px;background:linear-gradient(transparent,rgba(20,7,11,.95))}.photo-label strong{display:block;font:400 25px var(--serif);color:var(--gold2)}.photo-label small{display:block;margin-top:6px;font-size:9px;letter-spacing:.2em;text-transform:uppercase}.crest{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:22px;padding:23px clamp(20px,5vw,72px);border-block:1px solid var(--line);color:var(--gold);font-size:9px;letter-spacing:.22em;text-transform:uppercase;text-align:center}.crest:before,.crest:after{content:"";height:1px;background:var(--line)}.section{padding:clamp(48px,6vw,76px) clamp(20px,5vw,72px)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:28px}.section-head h2{font-size:clamp(34px,5vw,55px);margin:10px 0 0;color:var(--gold2)}.section-head p{font-size:11px;line-height:1.9;color:var(--muted);max-width:340px;margin:0}.banner{background:linear-gradient(115deg,#421522,#1b0b10);border:1px solid var(--line);padding:20px;display:grid;grid-template-columns:.8fr 1.5fr;gap:24px;align-items:center}.banner-title{padding:18px 10px}.banner-title h2{font-size:clamp(34px,4.5vw,64px);line-height:.9;margin:16px 0;color:var(--gold2);text-transform:uppercase}.rule{width:70px;height:1px;background:var(--gold);margin:20px 0}.banner-title p{font-size:10px;letter-spacing:.18em;line-height:1.8}.banner-photos{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.banner-photos img{width:100%;height:220px;object-fit:cover;filter:grayscale(1) contrast(1.05);border:1px solid var(--line)}.banner-photos img:first-child{filter:sepia(.15) saturate(.8)}.banner-foot{grid-column:1/-1;border-top:1px solid var(--line);padding:13px 4px 0;display:flex;justify-content:space-between;gap:12px;color:var(--gold);font-size:9px;letter-spacing:.13em;text-transform:uppercase}.toolbar{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 22px}.search{flex:1;min-width:210px;background:#1b0b10;border:1px solid var(--line);color:var(--ivory);padding:13px 15px;outline:none}.search:focus{border-color:var(--gold)}.filter{background:#1b0b10;border:1px solid var(--line);color:var(--gold2);padding:13px 15px}.profiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.profile{background:#200b11;border:1px solid rgba(197,162,101,.32);position:relative;transition:transform .25s,border-color .25s;min-width:0}.profile:hover{transform:translateY(-4px);border-color:var(--gold)}.profile-photo{height:330px;position:relative;overflow:hidden;background:#3a2027}.profile-photo img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.72) sepia(.08);transition:transform .5s}.profile:hover .profile-photo img{transform:scale(1.035)}.profile-no{position:absolute;top:13px;left:13px;background:rgba(28,8,14,.86);border:1px solid var(--line);color:var(--gold2);font-size:9px;padding:7px 9px;letter-spacing:.15em}.profile-info{padding:19px 19px 22px}.profile-role{font-size:9px;letter-spacing:.2em;color:var(--gold);text-transform:uppercase}.profile h3{font-size:27px;color:var(--gold2);margin:9px 0 5px}.profile-title{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--ivory)}.profile-desc{font-size:12px;line-height:1.8;color:var(--muted);margin:13px 0 0}.profile-line{height:1px;background:var(--line);margin-top:17px}.profile-more{display:inline-block;margin-top:15px;color:var(--gold2);font-size:9px;letter-spacing:.15em;text-transform:uppercase;border-bottom:1px solid var(--gold);padding-bottom:4px}.empty{display:none;color:var(--muted);padding:28px 0}.values{background:#1b0b10;border-block:1px solid var(--line);display:grid;grid-template-columns:repeat(3,1fr)}.value{padding:34px 26px;text-align:center;border-right:1px solid var(--line)}.value:last-child{border:0}.symbol{font:32px var(--serif);color:var(--gold)}.value h3{font-size:22px;color:var(--gold2);margin:10px 0}.value p{font-size:11px;line-height:1.8;color:var(--muted);max-width:230px;margin:auto}.closing{text-align:center;padding:74px 20px;background:radial-gradient(ellipse at center,rgba(91,31,45,.5),transparent 65%)}.quote{font:clamp(28px,4.8vw,52px)/1.2 var(--serif);color:var(--gold2);max-width:850px;margin:20px auto}.closing p{font-size:10px;letter-spacing:.22em;color:var(--gold);text-transform:uppercase}footer{border-top:1px solid var(--line);padding:22px clamp(20px,5vw,72px);display:flex;justify-content:space-between;gap:16px;color:#a9988c;font-size:9px;letter-spacing:.12em;text-transform:uppercase}.note{font-size:10px;color:#9f8d82;line-height:1.7;margin-top:18px}.modal{position:fixed;inset:0;background:rgba(7,3,5,.82);z-index:50;display:none;place-items:center;padding:20px}.modal.open{display:grid}.modal-card{width:min(650px,100%);max-height:85vh;overflow:auto;background:var(--deep);border:1px solid var(--gold);padding:28px;position:relative}.modal-close{position:absolute;top:12px;right:12px;background:none;border:1px solid var(--line);color:var(--gold2);padding:6px 10px;cursor:pointer}.modal h2{font-size:36px;color:var(--gold2);margin:10px 0}.modal p{color:var(--muted);font-size:13px;line-height:1.9}.modal-meta{font-size:10px;letter-spacing:.15em;color:var(--gold);text-transform:uppercase}
+@media(max-width:850px){.hero-grid{grid-template-columns:1fr;gap:32px}.hero-photo{height:390px;max-width:560px;width:100%;margin:auto}.profiles{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.profile-photo{height:280px}.banner{grid-template-columns:1fr}.banner-title{padding:8px}.banner-photos img{height:180px}.section-head{align-items:start;flex-direction:column}}
+@media(max-width:560px){.topbar{padding:12px 18px}.brand{font-size:8px;letter-spacing:.13em}.menu-toggle{display:block}nav{display:none;position:absolute;top:61px;left:0;right:0;padding:18px;background:#19080e;border-bottom:1px solid var(--line);flex-direction:column;gap:18px}nav.open{display:flex}.hero{padding:46px 20px 34px}.hero-photo{height:330px}.crest{font-size:7px;letter-spacing:.1em;gap:10px}.banner{padding:12px}.banner-photos{gap:6px}.banner-photos img{height:135px}.banner-foot{font-size:7px;letter-spacing:.07em;flex-wrap:wrap}.profiles{grid-template-columns:1fr 1fr}.profile-photo{height:210px}.profile-info{padding:13px}.profile h3{font-size:19px}.profile-title{font-size:8px}.profile-desc{font-size:11px}.profile-role{font-size:8px}.values{grid-template-columns:1fr}.value{border-right:0;border-bottom:1px solid var(--line)!important;padding:25px 14px}.value:last-child{border-bottom:0!important}footer{flex-direction:column;line-height:1.8}.section{padding:46px 20px}.section-head h2{font-size:38px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="topbar">
+  <a class="brand" href="#top" aria-label="The Weber Family Archive home"><span class="seal"><span>W</span></span><span>The Weber Family Archive</span></a>
+  <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+  <nav id="mainNav" aria-label="Main navigation"><a href="#legacy">Legacy</a><a href="#family">The Family</a><a href="#principles">Principles</a></nav>
+</header>
+<main id="top">
+<section class="hero" id="legacy">
+  <div class="hero-grid">
+    <div><div class="eyebrow">A family defined by principle</div><h1><span>The House</span><span>of Weber</span></h1>
+      <div class="hero-sub">Where law meets legacy.</div>
+      <p class="hero-copy">Built on integrity. Guided by strategy. United by a name that carries weight in the worlds of law, finance, and private enterprise.</p>
+      <a class="cta" href="#family">Discover the family <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="hero-photo"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1200&q=85" alt="Formal portrait representing Sebastian Weber" fetchpriority="high">
+      <div class="photo-label"><strong>Sebastian Weber</strong><small>Patriarch · Keeper of the legacy</small></div>
+    </div>
+  </div>
+</section>
+<div class="crest"><span>Justice</span><span>SW · Est. MMXXVI</span><span>Private Capital</span></div>
+<section class="section" id="family">
+  <div class="section-head"><div><div class="eyebrow">The people behind the name</div><h2>Family Registry</h2></div><p>Explore the family profiles. These are fictional roleplay characters; replace the sample portraits and biographies to fit your universe.</p></div>
+  <div class="toolbar">
+    <input class="search" id="searchProfiles" type="search" placeholder="Search names, roles, or titles…" aria-label="Search family profiles">
+    <select class="filter" id="roleFilter" aria-label="Filter by role"><option value="all">All roles</option><option value="leadership">Leadership</option><option value="law">Law & Governance</option><option value="finance">Finance</option><option value="strategy">Family Affairs</option></select>
+  </div>
+  <div class="profiles" id="profiles">
+    <article class="profile" data-name="Sebastian Weber" data-role="leadership" data-search="patriarch founder family head legacy">
+      <div class="profile-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=85" alt="Sebastian Weber character portrait"><span class="profile-no">NO. 001</span></div>
+      <div class="profile-info"><div class="profile-role">The Patriarch</div><h3>Sebastian Weber</h3><div class="profile-title">Founder · Family Head</div><p class="profile-desc">The steady hand behind the family name and its enduring reputation.</p><div class="profile-line"></div><a href="#profile-sebastian" class="profile-more" data-profile="sebastian">View dossier ↗</a></div>
+    </article>
+    <article class="profile" data-name="Alexander Weber" data-role="leadership" data-search="heir next generation successor future">
+      <div class="profile-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=85" alt="Alexander Weber character portrait"><span class="profile-no">NO. 002</span></div>
+      <div class="profile-info"><div class="profile-role">The Heir</div><h3>Alexander Weber</h3><div class="profile-title">Next Generation</div><p class="profile-desc">Raised to protect the family’s future and carry its principles forward.</p><div class="profile-line"></div><a href="#profile-alexander" class="profile-more" data-profile="alexander">View dossier ↗</a></div>
+    </article>
+    <article class="profile" data-name="Isabella Weber" data-role="law" data-search="counsel law governance legal composed">
+      <div class="profile-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=85" alt="Isabella Weber character portrait"><span class="profile-no">NO. 003</span></div>
+      <div class="profile-info"><div class="profile-role">The Counsel</div><h3>Isabella Weber</h3><div class="profile-title">Law &amp; Governance</div><p class="profile-desc">Precise, composed, and always three steps ahead in the room.</p><div class="profile-line"></div><a href="#profile-isabella" class="profile-more" data-profile="isabella">View dossier ↗</a></div>
+    </article>
+    <article class="profile" data-name="Nicholas Weber" data-role="finance" data-search="financier private capital risk opportunity">
+      <div class="profile-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=85" alt="Nicholas Weber character portrait"><span class="profile-no">NO. 004</span></div>
+      <div class="profile-info"><div class="profile-role">The Financier</div><h3>Nicholas Weber</h3><div class="profile-title">Private Capital</div><p class="profile-desc">A calculated mind with an instinct for opportunity and risk.</p><div class="profile-line"></div><a href="#profile-nicholas" class="profile-more" data-profile="nicholas">View dossier ↗</a></div>
+    </article>
+    <article class="profile" data-name="Charlotte Weber" data-role="strategy" data-search="strategist family affairs connections priorities">
+      <div class="profile-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=800&q=85" alt="Charlotte Weber character portrait"><span class="profile-no">NO. 005</span></div>
+      <div class="profile-info"><div class="profile-role">The Strategist</div><h3>Charlotte Weber</h3><div class="profile-title">Family Affairs</div><p class="profile-desc">The quiet force connecting people, priorities, and possibilities.</p><div class="profile-line"></div><a href="#profile-charlotte" class="profile-more" data-profile="charlotte">View dossier ↗</a></div>
+    </article>
+    <article class="profile" data-name="Julian Weber" data-role="leadership" data-search="successor emerging leadership new perspective">
+      <div class="profile-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?auto=format&fit=crop&w=800&q=85" alt="Julian Weber character portrait"><span class="profile-no">NO. 006</span></div>
+      <div class="profile-info"><div class="profile-role">The Successor</div><h3>Julian Weber</h3><div class="profile-title">Emerging Leadership</div><p class="profile-desc">A new perspective shaped by an old and demanding legacy.</p><div class="profile-line"></div><a href="#profile-julian" class="profile-more" data-profile="julian">View dossier ↗</a></div>
+    </article>
+  </div>
+  <p class="empty" id="emptyState">No profiles match that search. Try another name or role.</p>
+  <p class="note">RP note: portrait images are illustrative placeholders loaded from Unsplash. Replace them with images you have permission to use.</p>
+</section>
+<section class="values" id="principles">
+  <div class="value"><div class="symbol">Ⅰ</div><h3>Integrity</h3><p>Reputation is earned through every decision, not simply inherited with a name.</p></div>
+  <div class="value"><div class="symbol">Ⅱ</div><h3>Strategy</h3><p>Every move is deliberate. Every agreement has a purpose.</p></div>
+  <div class="value"><div class="symbol">Ⅲ</div><h3>Continuity</h3><p>What is built today should stand long after the present generation.</p></div>
+</section>
+<section class="closing"><div class="eyebrow">The Weber principle</div><div class="quote">“Power is built. Trust is earned. Legacy is protected.”</div><p>The House of Weber · Law · Finance · Legacy</p></section>
+</main>
+<footer><span>© 2026 Sebastian Weber Family · Roleplay universe</span><span>Private family archive · All fictional</span></footer>
+</div>
+<div class="modal" id="profileModal" role="dialog" aria-modal="true" aria-labelledby="modalName">
+  <div class="modal-card"><button class="modal-close" id="modalClose" aria-label="Close dossier">Close ✕</button><div class="eyebrow">Confidential family dossier</div><h2 id="modalName">Character</h2><div class="modal-meta" id="modalMeta"></div><p id="modalBio"></p><p class="note">This is a fictional roleplay profile. Add your character’s history, relationships, and secrets here by editing the character data in <code>index.html</code>.</p></div>
+</div>
+<script>
+const characters = {
+ sebastian:{name:"Sebastian Weber",meta:"The Patriarch · Founder & Family Head",bio:"The steady hand behind the Weber name. Sebastian believes a legacy is protected through discipline, discretion, and decisions made long before a crisis arrives. As head of the family, he is the final voice on matters of reputation and continuity."},
+ alexander:{name:"Alexander Weber",meta:"The Heir · Next Generation",bio:"Raised with the expectation that one day he will carry the family name forward. Alexander is learning to balance tradition with the demands of a changing world, while proving that inheritance alone does not make a leader."},
+ isabella:{name:"Isabella Weber",meta:"The Counsel · Law & Governance",bio:"Precise, composed, and observant, Isabella understands that the strongest position is often the one prepared quietly in advance. She helps the family navigate legal questions, internal agreements, and delicate negotiations."},
+ nicholas:{name:"Nicholas Weber",meta:"The Financier · Private Capital",bio:"A calculated mind with an instinct for opportunity and risk. Nicholas weighs each decision by its long-term implications and knows that financial strength is only as durable as the judgment behind it."},
+ charlotte:{name:"Charlotte Weber",meta:"The Strategist · Family Affairs",bio:"Charlotte is the quiet force connecting people, priorities, and possibilities. She notices the details others overlook and understands how relationships, timing, and trust can shape the family’s future."},
+ julian:{name:"Julian Weber",meta:"The Successor · Emerging Leadership",bio:"A new perspective shaped by an old and demanding legacy. Julian is still defining what leadership means to him, bringing fresh ideas to a family that values continuity but cannot afford to stand still."}
+};
+const search = document.getElementById('searchProfiles');
+const filter = document.getElementById('roleFilter');
+const cards = [...document.querySelectorAll('.profile')];
+const empty = document.getElementById('emptyState');
+function updateCards(){const q=search.value.trim().toLowerCase();let count=0;cards.forEach(card=>{const text=(card.dataset.name+' '+card.dataset.search+' '+card.innerText).toLowerCase();const okText=text.includes(q);const okRole=filter.value==='all'||card.dataset.role===filter.value;card.hidden=!(okText&&okRole);if(!card.hidden)count++;});empty.style.display=count?'none':'block';}
+search.addEventListener('input',updateCards);filter.addEventListener('change',updateCards);
+const modal=document.getElementById('profileModal');
+function openProfile(id){const c=characters[id];if(!c)return;document.getElementById('modalName').textContent=c.name;document.getElementById('modalMeta').textContent=c.meta;document.getElementById('modalBio').textContent=c.bio;modal.classList.add('open');document.getElementById('modalClose').focus();}
+document.querySelectorAll('[data-profile]').forEach(link=>link.addEventListener('click',e=>{e.preventDefault();openProfile(link.dataset.profile);}));
+function closeModal(){modal.classList.remove('open');}
+document.getElementById('modalClose').addEventListener('click',closeModal);
+modal.addEventListener('click',e=>{if(e.target===modal)closeModal();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+const menuToggle=document.getElementById('menuToggle'), nav=document.getElementById('mainNav');
+menuToggle.addEventListener('click',()=>{const isOpen=nav.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(isOpen));});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');}));
+</script>
+</body>
+</html>
