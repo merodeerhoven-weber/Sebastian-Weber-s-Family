@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#250910">
-<meta name="description" content="The House of Weber — a fictional family archive of law, finance, and legacy.">
+<meta name="description" content="The House of Sebastian Weber — a fictional family archive of law, finance, and legacy.">
 <title>The House of Sebastian Weber — Family Archive</title>
 <style>
 :root{--bg:#160b0f;--deep:#250910;--panel:#1d0b11;--wine:#421522;--gold:#c5a265;--gold2:#ead7b4;--ivory:#f0e7da;--muted:#b9a99a;--line:rgba(197,162,101,.38);--serif:Georgia,"Times New Roman",serif;--sans:Arial,Helvetica,sans-serif}
@@ -17,7 +17,7 @@
 <body>
 <div class="wrap">
 <header class="topbar">
-  <a class="brand" href="#top" aria-label="The Weber Family Archive home"><span class="seal"><span>W</span></span><span>The Weber Family Archive</span></a>
+  <a class="brand" href="#top" aria-label="The Sebastian Weber Family Archive home"><span class="seal"><span>W</span></span><span>The Sebastian Weber Family Archive</span></a>
   <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
   <nav id="mainNav" aria-label="Main navigation"><a href="#legacy">Legacy</a><a href="#family">The Family</a><a href="#principles">Principles</a></nav>
 </header>
@@ -80,16 +80,16 @@
 <footer><span>© 2026 Sebastian Weber Family · Roleplay universe</span><span>Private family archive · All fictional</span></footer>
 </div>
 <div class="modal" id="profileModal" role="dialog" aria-modal="true" aria-labelledby="modalName">
-  <div class="modal-card"><button class="modal-close" id="modalClose" aria-label="Close dossier">Close ✕</button><div class="eyebrow">Confidential family dossier</div><h2 id="modalName">Character</h2><div class="modal-meta" id="modalMeta"></div><p id="modalBio"></p><p class="note">This is a fictional roleplay profile. Add your character’s history, relationships, and secrets here by editing the character data in <code>index.html</code>.</p></div>
+  <div class="modal-card"><button class="modal-close" id="modalClose" aria-label="Close dossier">Close ✕</button><div class="eyebrow">Confidential family dossier</div><h2 id="modalName">Character</h2><div class="modal-meta" id="modalMeta"></div><p id="modalBio"></p><p class="note">This is a fictional roleplay profile.</p></div>
 </div>
 <script>
 const characters = {
  sebastian:{name:"Sebastian Weber",meta:"The Patriarch · Founder & Family Head",bio:"The steady hand behind the Weber name. Sebastian believes a legacy is protected through discipline, discretion, and decisions made long before a crisis arrives. As head of the family, he is the final voice on matters of reputation and continuity."},
- cassandra:{name:"Cassandra Mei Lin",meta:"The Queen · Next Generation",bio:"Raised with the expectation that one day he will carry the family name forward. Alexander is learning to balance tradition with the demands of a changing world, while proving that inheritance alone does not make a leader."},
- reviano:{name:"Reviano G. Weber",meta:"The Counsel · Law & Governance",bio:"Precise, composed, and observant, Isabella understands that the strongest position is often the one prepared quietly in advance. She helps the family navigate legal questions, internal agreements, and delicate negotiations."},
- mero:{name:"Mero Deerhoven Weber",meta:"The Financier · Private Capital",bio:"A calculated mind with an instinct for opportunity and risk. Nicholas weighs each decision by its long-term implications and knows that financial strength is only as durable as the judgment behind it."},
- emmanuel:{name:"Emmanuel Anderson Weber",meta:"The Strategist · Family Affairs",bio:"Charlotte is the quiet force connecting people, priorities, and possibilities. She notices the details others overlook and understands how relationships, timing, and trust can shape the family’s future."},
- eleia:{name:"Eleia Liriel Weber",meta:"The Successor · Emerging Leadership",bio:"A new perspective shaped by an old and demanding legacy. Julian is still defining what leadership means to him, bringing fresh ideas to a family that values continuity but cannot afford to stand still."}
+ cassandra:{name:"Cassandra Mei Lin",meta:"The Queen · Next Generation",bio:"Raised with the expectation that one day she will carry the family name forward. Cassandra is learning to balance tradition with the demands of a changing world, while proving that inheritance alone does not make a leader."},
+ reviano:{name:"Reviano G. Weber",meta:"The Counsel · Law & Governance",bio:"Precise, composed, and observant, Reviano understands that the strongest position is often the one prepared quietly in advance. She helps the family navigate legal questions, internal agreements, and delicate negotiations."},
+ mero:{name:"Mero Deerhoven Weber",meta:"The Financier · Private Capital",bio:"A sharp mind guided by ambition, discipline, and a keen instinct for opportunity. Mero Deerhoven approaches every decision with calculated precision by technology, balancing risk against long-term reward. To him, true wealth is not merely accumulated, but built on sound judgment, strategic foresight, and the patience to know when to act."},
+ emmanuel:{name:"Emmanuel Anderson Weber",meta:"The Strategist · Family Affairs",bio:"Emmanuel is the quiet force connecting people, priorities, and possibilities. She notices the details others overlook and understands how relationships, timing, and trust can shape the family’s future."},
+ eleia:{name:"Eleia Liriel Weber",meta:"The Successor · Emerging Leadership",bio:"A new perspective shaped by an old and demanding legacy. Eleia is still defining what leadership means to her, bringing fresh ideas to a family that values continuity but cannot afford to stand still."}
 };
 const search = document.getElementById('searchProfiles');
 const filter = document.getElementById('roleFilter');
